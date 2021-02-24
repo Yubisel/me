@@ -20,7 +20,7 @@ pages:
 #    - cd ..      # return to project root directory
 #    - mkdir public       # make public directory in root for deployment due to artifact path only allowing /public
 #    - ls
-#    - mv ./front/ui/build/* public       # move build contents to new /public directory
+    - mv ./build/* public       # move build contents to new /public directory
 #    - export
   artifacts:
     paths:
