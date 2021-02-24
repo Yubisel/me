@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Doc
+
+[https://forum.gitlab.com/t/notes-on-how-to-deploy-react-app-on-gitlab-pages-using-ci-cd-feature/47092](https://forum.gitlab.com/t/notes-on-how-to-deploy-react-app-on-gitlab-pages-using-ci-cd-feature/47092)
