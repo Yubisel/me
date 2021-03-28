@@ -1,0 +1,141 @@
+$color-text-toast-success: rgb(0, 102, 68);
+$color-text-toast-info   : rgb(8, 67, 143);
+$color-text-toast-warning: rgb(198, 127, 43);
+$color-text-toast-error  : rgb(191, 38, 0);
+
+$color-backgroud-toast-success: rgb(227, 252, 239);
+$color-backgroud-toast-info   : rgb(224, 238, 255);
+$color-backgroud-toast-warning: rgb(255, 250, 230);
+$color-backgroud-toast-error  : rgb(255, 235, 230);
+
+$color-progressBar-toast-success: rgb(54, 179, 126);
+$color-progressBar-toast-info   : rgb(38, 132, 255);
+$color-progressBar-toast-warning: rgb(255, 171, 0);
+$color-progressBar-toast-error  : rgb(255, 86, 48);
+
+
+.Toastify {
+
+    .Toastify__toast-container {
+        width: 400px;
+    }
+
+    /** Classes for the displayed toast **/
+    .Toastify__toast {
+        font-size    : .8em;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.176) 0px 3px 8px;
+        padding-left: 42px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+        }
+    }
+
+    .Toastify__progress-bar {
+        height: 2px;
+    }
+
+    .Toastify__toast--dark {}
+
+    .Toastify__toast--default {}
+
+    .Toastify__toast--info {
+        background: $color-backgroud-toast-info;
+        color     : $color-text-toast-info;
+
+        .Toastify__progress-bar {
+            background: $color-progressBar-toast-info;
+        }
+
+        .Toastify__close-button {
+            color: $color-text-toast-info;
+        }
+
+        &::before{
+            background: $color-progressBar-toast-info url('../svg/info.svg') scroll 50% 50% no-repeat;
+            background-size: 20px 20px;
+        }
+    }
+
+    .Toastify__toast--success {
+        background: $color-backgroud-toast-success;
+        color     : $color-text-toast-success;
+
+        .Toastify__progress-bar {
+            background: $color-progressBar-toast-success;
+        }
+
+        .Toastify__close-button {
+            color: $color-text-toast-success;
+        }
+
+        &::before{
+            background: $color-progressBar-toast-success url('../svg/success.svg') scroll 50% 50% no-repeat;
+            background-size: 20px 20px;
+        }
+    }
+
+    .Toastify__toast--warning {
+        background: $color-backgroud-toast-warning;
+        color     : $color-text-toast-warning;
+
+        .Toastify__progress-bar {
+            background: $color-progressBar-toast-warning;
+        }
+
+        .Toastify__close-button {
+            color: $color-text-toast-warning;
+        }
+
+        &::before{
+            background: $color-progressBar-toast-warning url('../svg/warning.svg') scroll 50% 50% no-repeat;
+            background-size: 20px 20px;
+        }
+    }
+
+    .Toastify__toast--error {
+        background: $color-backgroud-toast-error;
+        color     : $color-text-toast-error;
+
+        .Toastify__progress-bar {
+            background: $color-progressBar-toast-error;
+        }
+
+        .Toastify__close-button {
+            color: $color-text-toast-error;
+        }
+
+        &::before{
+            background: $color-progressBar-toast-error url('../svg/error.svg') scroll 50% 50% no-repeat;
+            background-size: 20px 20px;
+        }
+    }
+
+    .Toastify__toast-body {}
+
+    /** Classes for the close button. Better use your own closeButton **/
+
+
+    .Toastify__close-button--default {}
+
+    .Toastify__close-button>svg {}
+
+    .Toastify__close-button:hover,
+    .Toastify__close-button:focus {}
+
+    /** Classes for the progress bar **/
+
+    .Toastify__progress-bar--animated {}
+
+    .Toastify__progress-bar--controlled {}
+
+    .Toastify__progress-bar--default {}
+
+    .Toastify__progress-bar--dark {}
+}
