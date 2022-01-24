@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import MenuLink from "../components/MenuLink";
 
 const Header = () => {
   const [headerBackground, setHeaderBackground] = useState("");
@@ -23,11 +24,11 @@ const Header = () => {
             <img alt="feature" className="object-cover object-center" width="60px" height="60px" src="images/logo-rounded.png" />
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-              <a href="#home" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" >Inicio</a>
-              <a href="#about-us" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" >Quienes somos</a>
-              <a href="#services" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" >Servicios</a>
-              <a href="#works" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" >Mis trabajos</a>
-              <a href="#contacts" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" >Contáctenos</a>
+            <MenuLink to="#home" desccription="Inicio" />
+            <MenuLink to="#about-us" desccription="Sobre me" />
+            <MenuLink to="#services" desccription="Experiencia" />
+            <MenuLink to="#works" desccription="Mis trabajos" />
+            <MenuLink to="#contacts" desccription="Contáctenos" />
           </nav>
         </div>
       </header>

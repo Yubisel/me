@@ -1,12 +1,12 @@
 import React from "react";
 
-const Services = () => {
+const Education = () => {
   return (
     <section id="services">
       <div className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 pt-24 pb-4 mx-auto">
           <div className="text-center mb-5">
-            <h1 className="sm:text-3xl mt-12 text-2xl font-medium title-font text-white mb-4">Servicios</h1>
+            <h1 className="sm:text-3xl mt-12 text-2xl font-medium title-font text-white mb-4">Educación</h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 text-opacity-80">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
@@ -81,4 +81,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Education;

@@ -1,9 +1,8 @@
-// import './styles.scss';
 import Header from "./partials/Header";
 import AboutUs from "./partials/AboutUs";
-import Services from "./partials/Services";
+import Experience from "./partials/Experience";
 import MyWorks from "./partials/MyWorks";
-import ContactUs from "./partials/ContactUs";
+import Education from "./partials/Education";
 import Footer from "./partials/Footer";
 
 function Main() {
@@ -11,9 +10,9 @@ function Main() {
     <main className="bg-gray-900">
       <Header />
       <AboutUs />
-      <Services />
+      <Experience />
       <MyWorks />
-      <ContactUs />
+      <Education />
       <Footer />
     </main>
   );
