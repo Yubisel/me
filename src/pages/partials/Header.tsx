@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import MenuLink from "../components/MenuLink";
+import React, { createRef, useEffect, useState } from "react";
+import ScrollSpy from 'react-scrollspy-navigation';
 
 const Header = () => {
   const [headerBackground, setHeaderBackground] = useState("");
@@ -24,11 +24,13 @@ const Header = () => {
             <img alt="feature" className="object-cover object-center" width="60px" height="60px" src="images/logo-rounded.png" />
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <MenuLink to="#home" desccription="Inicio" />
-            <MenuLink to="#about-us" desccription="Sobre me" />
-            <MenuLink to="#services" desccription="Experiencia" />
-            <MenuLink to="#works" desccription="Mis trabajos" />
-            <MenuLink to="#contacts" desccription="Contáctenos" />
+            <ScrollSpy className={"active-item"}>
+              <a href="#home" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" ref={createRef()}>Inicio</a>
+              <a href="#about-us" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" ref={createRef()}>Quienes somos</a>
+              <a href="#services" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" ref={createRef()}>Servicios</a>
+              <a href="#works" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" ref={createRef()}>Mis trabajos</a>
+              <a href="#contacts" className="mx-6 hover:text-white hover:border-indigo-700 nav-item" ref={createRef()}>Contáctenos</a>
+            </ScrollSpy>
           </nav>
         </div>
       </header>

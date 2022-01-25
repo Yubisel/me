@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-item {
+  @apply
+      border-b-4
+      border-transparent
+}
+
+.active-item {
+  @apply
+      border-indigo-700
+}
+
 .diagonal-box {
   background-image: linear-gradient(90deg, #6303B1, #ff0099);
   position: relative;
