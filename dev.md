@@ -5,6 +5,7 @@
 
 ## gh-pages 3.2.3
 
+[https://www.npmjs.com/package/gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ## sass 1.49.0
 
@@ -14,3 +15,11 @@
 ## react-vertical-timeline-component
 
 [https://www.npmjs.com/package/react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component)
+
+## react-scrollspy-navigation 1.0.2
+
+[https://www.npmjs.com/package/react-scrollspy-navigation](https://www.npmjs.com/package/react-scrollspy-navigation)
+
+## Check for use
+
+- [https://github.com/typicode/husky](https://github.com/typicode/husky)
